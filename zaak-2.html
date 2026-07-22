@@ -1,0 +1,43 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Murdoku · zaak 2</title><style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#e7e9ec;font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif;color:#20272e;}
+.zaak{width:210mm;min-height:297mm;margin:0 auto;background:var(--tint);padding:14mm 15mm;display:flex;flex-direction:column;}
+h1{font-family:Georgia,serif;font-weight:700;letter-spacing:1px;text-align:center;font-size:30px;}
+h2{text-align:center;font-size:21px;margin:4px 0 8px;color:#1b3a5c;}
+.verhaal{font-size:15.5px;line-height:1.5;background:rgba(255,255,255,.6);border:1px solid rgba(0,0,0,.08);border-radius:12px;padding:12px 16px;}
+.kolom2{display:flex;gap:16px;margin:12px 0;}
+.aanwijzingen{flex:2;} .oplosvak{flex:1;}
+h3{font-size:16px;margin-bottom:8px;color:#1b3a5c;}
+.aanwijzingen ol{margin-left:20px;display:flex;flex-direction:column;gap:5px;font-size:14.5px;line-height:1.35;}
+.tip{font-size:12.5px;color:#5c6772;margin-top:10px;line-height:1.4;}
+.oplosvak{background:rgba(255,255,255,.6);border:2px dashed rgba(0,0,0,.2);border-radius:12px;padding:12px 14px;}
+.oplosvak .regel{font-size:15px;margin-bottom:12px;}
+.oplosvak .regel span{display:inline-block;border-bottom:1.5px solid #333;min-width:90px;height:16px;}
+.grids{display:flex;gap:14px;justify-content:space-between;flex-wrap:wrap;margin-top:18px;}
+.grid{flex:1;min-width:150px;}
+.gtitel{font-size:12px;font-weight:bold;text-align:center;margin-bottom:5px;color:#1b3a5c;}
+.gtitel span{color:#999;}
+table{border-collapse:collapse;width:100%;}
+.grid td,.grid th{border:1.3px solid #33414f;text-align:center;}
+.grid td{height:30px;background:rgba(255,255,255,.55);}
+.grid .hoek{background:transparent;border:none;}
+.kh{padding:4px 2px;font-weight:normal;background:rgba(255,255,255,.35);}
+.kh .em{display:block;font-size:16px;} .kh .lb{display:block;font-size:9px;line-height:1.1;}
+.rh{padding:4px 6px;text-align:left;font-weight:normal;font-size:11px;white-space:nowrap;background:rgba(255,255,255,.35);}
+.rh .em{font-size:14px;}
+.printknop{position:fixed;top:14px;right:14px;z-index:50;border:none;cursor:pointer;background:#1b3a5c;color:#fff;
+  font-family:"Trebuchet MS",sans-serif;font-weight:bold;font-size:15px;padding:12px 18px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.2);}
+.antwoordzaak h1{margin-bottom:10px;}
+.antzaak{margin-bottom:18px;}
+.anttab{border-collapse:collapse;width:100%;font-size:14px;}
+.anttab th,.anttab td{border:1px solid #c7cfd6;padding:6px 10px;text-align:left;}
+.anttab th{background:#eef2f6;}
+.antzaak .dader{margin-top:6px;font-size:14.5px;}
+@media print{
+  body{background:#fff;} .printknop{display:none;}
+  .zaak{margin:0;min-height:auto;height:297mm;page-break-after:always;}
+  .zaak,.grid td,.kh,.rh,.verhaal,.oplosvak{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  @page{size:A4 portrait;margin:0;}
+}
+@media screen{.zaak{box-shadow:0 2px 14px rgba(0,0,0,.14);margin:16px auto;}}
+</style></head><body><button class="printknop" onclick="window.print()">🖨 Print deze pagina</button><section class="zaak" style="--tint:#f2f8f3"><h1>🕵️ Murdoku</h1><h2>Zaak 2: De gestolen telefoon</h2><p class="verhaal">Tijdens de pauze is een telefoon uit de kantine verdwenen. Drie leerlingen worden ondervraagd. Ieder was op een andere plek en had één ding bij zich. Wie heeft het gedaan?</p><div class="kolom2"><div class="aanwijzingen"><h3>Aanwijzingen</h3><ol><li>Bram was buiten, op het schoolplein.</li><li>Mila was niet in de gymzaal.</li><li>De persoon met het skateboard was in de gymzaal.</li><li>Bram had geen blauwe rugzak bij zich.</li><li>Mila droeg geen koptelefoon.</li><li>De telefoon verdween uit de kantine.</li></ol><p class="tip">Zet een <b>✓</b> als iets zeker klopt en een <b>✗</b> als iets onmogelijk is. Elke verdachte hoort bij precies één plek en één voorwerp.</p></div><div class="oplosvak"><h3>Wie is de dader?</h3><div class="regel">Dader: <span></span></div><div class="regel">Plek: <span></span></div><div class="regel">Voorwerp: <span></span></div></div></div><div class="grids"><div class="grid"><div class="gtitel">Verdachten <span>×</span> Plaatsen</div><table><tr><td class="hoek"></td><th class="kh"><span class="em">🍽️</span><span class="lb">Kantine</span></th><th class="kh"><span class="em">🤸</span><span class="lb">Gymzaal</span></th><th class="kh"><span class="em">🏫</span><span class="lb">Schoolplein</span></th></tr><tr><th class="rh"><span class="em">🧑</span> Yusuf</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">👧</span> Mila</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">👦</span> Bram</th><td></td><td></td><td></td></tr></table></div><div class="grid"><div class="gtitel">Verdachten <span>×</span> Voorwerpen</div><table><tr><td class="hoek"></td><th class="kh"><span class="em">🎒</span><span class="lb">Blauwe rugzak</span></th><th class="kh"><span class="em">🎧</span><span class="lb">Koptelefoon</span></th><th class="kh"><span class="em">🛹</span><span class="lb">Skateboard</span></th></tr><tr><th class="rh"><span class="em">🧑</span> Yusuf</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">👧</span> Mila</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">👦</span> Bram</th><td></td><td></td><td></td></tr></table></div><div class="grid"><div class="gtitel">Plaatsen <span>×</span> Voorwerpen</div><table><tr><td class="hoek"></td><th class="kh"><span class="em">🎒</span><span class="lb">Blauwe rugzak</span></th><th class="kh"><span class="em">🎧</span><span class="lb">Koptelefoon</span></th><th class="kh"><span class="em">🛹</span><span class="lb">Skateboard</span></th></tr><tr><th class="rh"><span class="em">🍽️</span> Kantine</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">🤸</span> Gymzaal</th><td></td><td></td><td></td></tr><tr><th class="rh"><span class="em">🏫</span> Schoolplein</th><td></td><td></td><td></td></tr></table></div></div></section></body></html>
