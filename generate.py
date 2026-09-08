@@ -81,9 +81,30 @@ ZAKEN = [
                       "Yusuf": ("Fietsenstalling", "Handschoen")},
         "dader": "Daan",
     },
+    {
+        "titel": "Zaak 4: De verdwenen traktatie",
+        "verhaal": ("De traktatie voor de jarige is verdwenen uit het klaslokaal! "
+                    "Drie kinderen waren in de buurt. Ieder was op een andere plek "
+                    "en had één ding bij zich. Wie heeft de traktatie gepakt?"),
+        "verdachten": [V("Liam", "👦🏻"), V("Aisha", "👧🏾"), V("Sami", "👦🏽")],
+        "plaatsen": [V("Speelplaats", "🛝"), V("Klaslokaal", "📒"), V("Gang", "🚪")],
+        "voorwerpen": [V("Voetbal", "⚽"), V("Knuffel", "🧸"), V("Step", "🛴")],
+        "aanwijzingen": [
+            "Sami was in de gang.",
+            "Liam was niet in het klaslokaal.",
+            "De persoon op de speelplaats had een voetbal bij zich.",
+            "Aisha had geen knuffel bij zich.",
+            "De persoon met de step was in het klaslokaal.",
+            "De traktatie verdween uit het klaslokaal.",
+        ],
+        "oplossing": {"Liam": ("Speelplaats", "Voetbal"),
+                      "Aisha": ("Klaslokaal", "Step"),
+                      "Sami": ("Gang", "Knuffel")},
+        "dader": "Aisha",
+    },
 ]
 
-TINTS = ["#eef4fb", "#f2f8f3", "#fdf1f0"]
+TINTS = ["#eef4fb", "#f2f8f3", "#fdf1f0", "#f6f2fc"]
 
 
 def esc(s):
